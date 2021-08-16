@@ -6,8 +6,11 @@ Technology Stack: **Reactjs framework (Javascript)**
 
 Bootcamp mentors: 
 
-* Danial Bazmandeh, CE BSc at IUST, 97
-* Sina Shabani, CE BSc at IUST, 97
-* Sadra Khamoshi Far, CE BSc at IUST, 97
-* Masoud Golestaneh, CE BSc at IUST, 97
-* Alireza Bahrami, ...
+* Reza Mousavian, CE BSc at IUST, 96
+* Hasti Karamdel, CE BSc at IUST, 97
+* Parsa  Eisazadeh, CE BSc at IUST, 97
+* Hazhar Aziz, CE BSc at IUST, 97
+* Afshin Zanganeh, CE BSc at IUST, 98
+* Morteza Shahrabi Farahani, CE BSc at IUST, 98
+* Reza Noori, CE BSc at IUST, 99
+* Arshia Ansari, CE BSc at IUST, 99
