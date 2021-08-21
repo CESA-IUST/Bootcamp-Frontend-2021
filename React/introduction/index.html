@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- Load React API -->
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <!-- Load React DOM-->
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <!-- Load Babel Compiler -->
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <body>
+    <div id="root"></div>
+    <div id="id01" class="red-btn"></div>
+    <script>
+      // without using JSX
+      class Hello extends React.Component {
+        render() {
+          return React.createElement('div', null, `Hello  world`);
+        }
+      }
+
+      ReactDOM.render(
+        React.createElement(Hello, { toWhat: 'World' }, null),
+        document.getElementById('root'),
+      );
+    </script>
+    <script type="text/babel">
+      const name = 'John Doe';
+      ReactDOM.render(<div className='red-btn' style={{'color':'red','fontSize':'30px'}}><h1>Hello {name}</h1></div>, document.getElementById('id01'));
+    </script>
+    <!-- create own -->
+    <script>
+      const newDiv = document.createElement('div');
+      newDiv.innerHTML = 'Hello.....';
+      document.getElementById('root').appendChild(newDiv);
+    </script>
+  </body>
+</html>
