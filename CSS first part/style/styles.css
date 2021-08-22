@@ -1,0 +1,178 @@
+/* colors: RGB => rgb(red, green, blue) */
+
+
+/* RGBA => rgba(red, green, blue, alpha) */
+
+
+/* HEX => #rrggbb */
+
+
+/* selectors:
+elements: example => p, h1, ...
+p {
+    color: red;
+}
+ 
+id => 
+<p id="hello"></p>
+
+#hello {
+    color: blue;
+}
+
+class => 
+<p class = "test"></p>
+
+.test {
+    color: yellow;
+}
+
+*/
+
+.matn {
+    color: black;
+    background-color: rgb(24, 62, 177);
+    border: 5px solid rgba(100, 50, 200, 0.5);
+    /* border: 5px solid red; */
+    /* border: 5px solid #111 */
+}
+
+
+/* css units */
+
+
+/* absolute units
+    cm, mm, in, px, pt, pc
+*/
+
+
+/* relative units
+    em, ex, ch, rem, vw, vh, vmin, vmax, %
+    em	Relative to the font-size of the element (2em means 2 times the size of the current font)
+    :( ex	Relative to the x-height of the current font (rarely used)
+    :( ch	Relative to the width of the "0" (zero)
+    rem	Relative to font-size of the root element
+    vw	Relative to 1% of the width of the viewport
+    * Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
+    :) vh	Relative to 1% of the height of the viewport*    
+*/
+
+.outer {
+    font-size: 50px;
+}
+
+.inner {
+    font-size: 0.5em;
+}
+
+#top-div {
+    font-size: 20px;
+}
+
+#inner-div {
+    font-size: 0.5rem;
+}
+
+.test-for-vw {
+    font-size: 10vw;
+}
+
+
+/* css borders */
+
+p.dotted {
+    border-style: dotted;
+}
+
+p.dashed {
+    border-style: dashed;
+}
+
+p.solid {
+    border-style: solid;
+}
+
+p.double {
+    border-style: double;
+}
+
+p.groove {
+    border-style: groove;
+}
+
+p.none {
+    border: 10px none black;
+}
+
+p.mix {
+    border-style: dotted dashed solid double;
+}
+
+p.test-border {
+    border-left: 10px solid red;
+    border-bottom: 1px solid rgb(255, 0, 0, 0.5);
+}
+
+.image {
+    width: 600px;
+    height: 300px;
+}
+
+.box-model {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    outline: 5px dotted #ff00ff;
+}
+
+.inner-div {
+    margin: 30px;
+}
+
+
+/* css selectors */
+
+
+/* 
+.class	                .intro	                Selects all elements with class="intro"
+.class1.class2	        .name1.name2	        Selects all elements with both name1 and name2 set within its class attribute
+.class1 .class2	        .name1 .name2	        Selects all elements with name2 that is a descendant of an element with name1
+#id            	        #firstname	            Selects the element with id="firstname"
+*	                    *       	            Selects all elements
+element	                p	                    Selects all <p> elements
+element.class	        p.intro	                Selects all <p> elements with class="intro"
+element,element	        div, p	                Selects all <div> elements and all <p> elements
+element element 	    div p	                Selects all <p> elements inside <div> elements
+element>element 	    div > p	                Selects all <p> elements where the parent is a <div> element
+[attribute]     	    [target]	            Selects all elements with a target attribute
+[attribute=value]	    [target=_blank]	        Selects all elements with target="_blank"
+:active	                a:active	            Selects the active link
+::after	                p::after	            Insert something after the content of each <p> element
+::before	            p::before	            Insert something before the content of each <p> element
+:focus	                input:focus	            Selects the input element which has focus
+:hover	                a:hover	                Selects links on mouse over
+:nth-child(n)	        p:nth-child(2)	        Selects every <p> element that is the second child of its parent
+:not(selector)      	:not(p)	                Selects every element that is not a <p> element
+
+*/
+
+input[type=text]:focus {
+    width: 500px;
+}
+
+.test .heading {
+    color: red;
+}
+
+.test.heading2 {
+    color: blue;
+}
+
+.testing::after {
+    content: " - Nice to meet you";
+}
+
+tr:nth-child(2n) {
+    background-color: yellow;
+}

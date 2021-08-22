@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css examples</title>
+
+    <link rel="stylesheet" href="style/styles.css">
+
+</head>
+
+<body>
+
+    <!-- ways for connecting html and css -->
+    <!-- 1.inline: <h1 style="color:blue;">A Blue Heading</h1> -->
+    <!-- 2. internal: between head tags
+    <style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+    </style>
+    -->
+
+    <!-- <h1 style="color: blue;"> blue heading</h1> -->
+
+    <!-- 3. external that we use in this exercise: <link rel="stylesheet" href="styles.css"> -->
+
+
+    <p class="matn" id="id1">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat.
+    </p>
+
+    <!-- units -->
+
+    <div class="outer">The font-size of the div element is set to 30px.
+        <span class="inner">
+            The span element inside the div element has a font-size of 0.5em, which equals to 0.5x30 = 15px
+        </span>
+    </div>
+
+    <div id="top-div">
+        The font-size of this div element is 20px
+        <div id="inner-div">
+            The font-size of this div element is 0.5rem. It also shows that it does not inherit from its parent element font size.
+        </div>
+    </div>
+
+    <p class="test-for-vw">
+        This is a test text.
+    </p>
+
+
+    <!-- borders -->
+
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="none">No border.</p>
+    <p class="mix">A mixed border.</p>
+
+    <p class="test-border">test border</p>
+
+
+    <!-- box model -->
+
+    <img class="image" src="images/Annotation 2021-08-08 171609.png" alt="box model">
+
+    <div class="box-model">This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+
+    <p>With this text, you can understand margins.</p>
+
+    <br><br><br><br><br><br>
+
+    <div class="outer-dov">
+        this is outer div
+        <div class="inner-div">
+            this is inner div
+        </div>
+    </div>
+
+    <!-- selectors -->
+    Search: <input type="text" name="search">
+
+    <span class="test"><p class="heading">Something</p></span>
+
+    <span class="test"><p class="heading2">another</p></span>
+
+    <p class="heading2 test">another text</p>
+
+    <p class="testing">My name is Morteza</p>
+    <p class="testing">I hope you enjoy this class.</p>
+
+
+    <table>
+        <tr>
+            <td>This is first row.</td>
+        </tr>
+        <tr>
+            <td>This is second row.</td>
+        </tr>
+        <tr>
+            <td>This is third row.</td>
+        </tr>
+        <tr>
+            <td>This is fourth row.</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
